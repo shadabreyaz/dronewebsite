@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="font-mans active:bg-[rgb(11,15,25)]">
+   <header class="max-w-7xl px-4 media420:px-12 fixed left-[50%] -translate-x-[50%] w-full text-white scroll:bg-[rgba(11,15,25,0.94)] z-50">
+     <div id="header-content" class="flex items-center justify-between py-1 text-sm relative">
+        <div class="flex items-center space-x-10">
+            <a href="#" class="text-lg font-bold flex items-center"><img class="w-12" src="/assests/logo.svg" alt="logo">&nbsp;Silicon</a>
+            <div id="menu-list" class="media420:menu:-right-10 menu:right-0 menu:transition-all menu:duration-300 transition-all duration-500
+             absolute top-2 -right-[120%] z-30 px-4 py-6 w-full media420:w-3/5 rounded-lg bg-[rgb(11,15,25)] shadow-md shadow-gray-100
+             media920:static media920:bg-transparent media920:shadow-none media920:w-full">
+                <div class="mb-6 media920:hidden">
+                  <div id="cross" class="flex items-center justify-between font-bold">Menu <img id="close-icon" class="w-3" src="/assests/xmark-solid.svg" alt="cross-icon"></div>
+                  <div class="border-b pt-3"></div>
+                </div>
+                 
+                <div class="space-y-4 media920:space-y-0 media920:flex media920:space-x-6 list-none">
+                   <li class="hover:text-[#6366f1]"><a href="#">Landing</a></li>
+                   <li class="hover:text-[#6366f1]"><a href="#">Pages</a></li>
+                   <li id="accounts" class="relative hover:text-[#6366f1] group before:flex before:w-12 before:h-20 before:absolute">
+                    <a href="#">Account</a>
+                    <div id="account-menu" class="group-hover:block hidden bg-slate-800 rounded-md border w-36 py-4 ps-3 pe-6 absolute top-8 left-0">
+                      <ul class="list-none text-white space-y-2">
+                        <li class="text-sm"><a href="#">Account details</a></li>
+                        <li class="text-sm"><a href="#">Security</a></li>
+                        <li class="text-sm"><a href="#">Notification</a></li>
+                        <li class="text-sm"><a href="#">Message</a></li>
+                        <li class="text-sm"><a href="#">Sign in</a></li>
+                        <li class="text-sm"><a href="#">Sign up</a></li>
+                      </ul>
+                    </div>
+                   </li>
+                   <li class="hover:text-[#6366f1]"><a href="#">UI Kit</a></li>
+                   <li class="hover:text-[#6366f1]"><a href="#">Docs</a></li>
+                </div>
+
+                <div class="mt-28 media920:hidden">
+                  <div class="border-b"></div>
+                  <button class="max-w-2/5 w-full mt-3 py-2 px-6 rounded-md bg-[#6366f1]">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="dark-mode flex space-x-4 items-center">
+           <div class="flex space-x-1">
+             <p class="hidden media420:block open:text-gray-400">Light</p>
+             <div id="dark-btn" class="bg-[#6366f1] h-[22px] w-10 rounded-3xl relative shadow-sm shadow-light-b before:transition-all before:duration-500 open:before:transition-all open:before:duration-500
+              cursor-pointer before:h-4 before:w-4 before:rounded-full before:bg-white before:absolute before:top-[50%] before:-translate-y-[50%] before:left-1 open:before:left-5"></div>
+             <p class="hidden media420:block text-gray-400 open:text-white">Dark</p>
+           </div>
+           <button class="hidden media920:block py-2 px-6 rounded-md bg-[#6366f1]">Buy Now</button>
+           <button id="hamburger" class="block media920:hidden"><img src="/assests/Group 7.png" alt="hamburger-icon"></button>
+        </div>
+     </div>
+   </header>
+   <main class="open:text-white">
+    <section id="hero" class="relative z-40 pt-48 pb-20 flex items-center justify-center text-white bg-[url('/assests/bg.jpg')] bg-no-repeat bg-cover max-w-7xl mx-auto px-4 media420:px-12">
+        <div class="left media920:flex-1">
+          <p class="text-xl text-gray-400">Make your moments fly with</p>
+          <br>
+          <h1 class="text-3xl font-extrabold sm:text-6xl">ProDrone 2.0</h1>
+          <br>
+          <div class="buttons mt-4 sm:mt-8 space-x-4">
+            <button class="text-sm bg-[#6366f1] transition ease-in-out duration-300 hover:bg-blue-700 py-2 px-4 rounded-md"><a class="flex items-center justify-center" href="https://www.youtube.com/watch?v=NJ3Z1hSOoMc">Watch video &nbsp;<img class="w-2" src="/assests/play-solid.svg" alt="play-btn"></a></button>
+            <button class="text-sm mt-4 sm:mt-0 bg-white transition ease-in-out duration-300 hover:bg-gray-200 text-black py-2 px-4 rounded-md">Learn More</button>
+          </div>
+          <div class="swiperjs max-w-md">
+              <div class="swiper mySwiper mt-8 py-8">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide max-w-80">
+                      <img class="rounded-md" src="/assests/slider1.jpg" />
+                    </div>
+                    <div class="swiper-slide max-w-80">
+                      <img class="rounded-md" src="/assests/slider2.jpg" />
+                    </div>
+                    <div class="swiper-slide max-w-80">
+                      <img class="rounded-md" src="/assests/slider4.jpg" />
+                    </div>
+                    <div class="swiper-slide max-w-80">
+                      <img class="rounded-md" src="/assests/slider3.jpg" />
+                    </div>
+                  </div>
+                   <div class="swiper-pagination -bottom-1 "></div>
+              </div>
+          </div>
+        </div>
+        <div class="right flex-1 hidden media920:block">
+          <img class="" src="/assests/image.png" alt="drone-img">
+        </div>
+    </section>
+
+    <section id="video" class="max-w-7xl mx-auto px-4 media420:px-12 py-20 media420:py-28">
+      <div class="flex gap-4 mb-8 flex-col media920:flex-row">
+         <h2 class="flex-1 text-2xl media420:text-4xl font-bold">Shoot like a pro with our new easy to use <span class="text-[#6366f1]">ProDrone 2.0</span></h2>
+         <p class="flex-1 text-gray-600">Featuring a 1-inch CMOS sensor that can shoot 4K/60fps videos and 20MP photos, ProDrone 2.0 grants filmmakers absolute creative freedom. It carefully optimizes user experience and intelligent features.</p>
+      </div>
+      <div class="relative rounded-md overflow-hidden">
+        <div class="absolute top-0 left-0 h-full w-full flex items-center justify-center z-20">
+          <a href="https://www.youtube.com/watch?v=aOwTUgqUfH8" class="flex items-center justify-center h-14 w-14 rounded-full bg-[#6366f1] transition ease-in-out duration-300 hover:bg-slate-400 after:absolute after:inset-0">
+            <img class="w-4" src="/assests/play-solid.svg" alt="">
+          </a>
+        </div>
+        <span class="absolute top-0 w-full h-full bg-black opacity-40"></span>
+        <img src="/assests/video-cover.jpg" alt="cover-image">
+      </div>
+    </section>
+
+    <section id="about-drone" class="max-w-7xl mx-auto px-4 media420:px-12">
+      <h2 class="text-2xl media420:text-4xl font-bold text-center">The benefits of world-changing drone</h2>
+      <div class="flex flex-wrap media920:flex-nowrap items-center justify-center mt-12">
+        <div class="space-y-16 w-2/4 order-2 media920:order-1">
+          <div class="flex flex-col items-center">
+            <img src="/assests/battery.svg" alt="">
+            <p>Flight time</p>
+            <p class="media420:text-xl font-bold">60 min</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="/assests/drone.svg" alt="">
+            <p>Obstacle sensing</p>
+            <p class="media420:text-xl font-bold">5-Direction</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="/assests/monitor.svg" alt="">
+            <p>Ultra-clear video</p>
+            <p class="media420:text-xl font-bold">4K</p>
+          </div>
+        </div>
+        <div class="w-full media920:w-2/3 space-y-12 order-1 media920:order-2">
+          <img src="/assests/smalldroneimage.png" alt="">
+          <div class="flex items-center justify-around pb-16 media920:p-0 text-center">
+          <div class="flex flex-col items-center">
+              <img src="/assests/thermometer.svg" alt="">
+              <p>Working temperature</p>
+              <p class="media420:text-xl font-bold">-10°C to 40°C</p>
+            </div>
+          <div class="flex flex-col items-center">
+              <img src="/assests/led-light.svg" alt="">
+              <p>For night time</p>
+              <p class="media420:text-xl font-bold">LED searchlight</p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-16 w-2/4 order-2 media920:order-3">
+          <div class="flex flex-col items-center">
+            <img src="/assests/zoom-in.svg" alt="">
+            <p>Optical camera</p>
+            <p class="media420:text-xl font-bold">2x zoom</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="/assests/computer-microprocessor.svg" alt="">
+            <p>Sensor</p>
+            <p class="media420:text-xl font-bold">1 inch</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="/assests/audio.svg" alt="">
+            <p>Noise reduction</p>
+            <p class="media420:text-xl font-bold">4dB</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="slider" class="max-w-7xl mx-auto px-4 media420:px-12 pt-24">
+      <h2 class="text-2xl media420:text-4xl font-bold text-center">User shots gallery</h2>
+      <div class="pt-10 relative overflow-hidden">
+        <div class="pt-4 whitespace-nowrap">
+          <div class="inline-flex space-x-3 media420:space-x-5 md:space-x-8 animate-anim">
+              <img  class="rounded-md h-48 media420:h-60 md:h-80"  src="/assests/01.jpg" alt="">
+              <img  class="rounded-md h-48 media420:h-60 md:h-80"  src="/assests/02.jpg" alt="">
+              <img  class="rounded-md h-48 media420:h-60 md:h-80"  src="/assests/03.jpg" alt="">
+              <img  class="rounded-md h-48 media420:h-60 md:h-80"  src="/assests/01.jpg" alt="">
+              <img  class="rounded-md h-48 media420:h-60 md:h-80"  src="/assests/02.jpg" alt="">
+              <img  class="rounded-md h-48 media420:h-60 md:h-80"  src="/assests/03.jpg" alt="">
+              <img  class="rounded-md h-48 media420:h-60 md:h-80"  src="/assests/01.jpg" alt="">
+          </div>
+        </div>  
+      </div>
+      
+      <div dir="rtl" class="swiper mySwiper2 py-8">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img  class="rounded-md"  src="/assests/05.jpg" alt=""></div>
+          <div class="swiper-slide"><img  class="rounded-md"  src="/assests/06.jpg" alt=""></div>
+          <div class="swiper-slide"><img  class="rounded-md"  src="/assests/07.jpg" alt=""></div>
+          <div class="swiper-slide"><img  class="rounded-md"  src="/assests/06.jpg" alt=""></div>
+          <div class="swiper-slide"><img  class="rounded-md"  src="/assests/07.jpg" alt=""></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="specification" class="max-w-7xl mx-auto px-4 media420:px-12 pt-10 pb-20">
+      <h2 class="text-2xl media420:text-4xl font-bold">Specs</h2>
+      <div class="flex flex-col md:flex-row">
+        <div class="texts flex-1">
+          <div class="border-b pt-6"></div>
+          <div class="flex pt-6 items-center space-x-1">
+              <h2 class="media420:text-lg font-bold flex-1">Weight (Battery & Propellers Included)</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">1400 g</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex pt-6 items-center">
+              <h2 class="media420:text-lg font-bold flex-1">Max Flight Time</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">Approx. 60 minutes</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex items-center pt-6">
+              <h2 class="media420:text-lg font-bold flex-1">Vision System</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">Forward Vision System<br>Backward Vision System<br>Downward Vision System</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex items-center pt-6">
+              <h2 class="text-sm media420:text-lg font-bold flex-1">Obstacle Sensing</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">Front & Rear Obstacle Avoidance <br>
+                Left & Right Infrared Obstacle Avoidance</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex items-center pt-6">
+              <h2 class="text-sm media420:text-lg font-bold flex-1">Camera Sensor</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">1" CMOS<br>Effective pixels: 20 M</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex items-center pt-6">
+              <h2 class="text-sm media420:text-lg font-bold flex-1">Max. Video Recording Resolution</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">4K 60P</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex items-center pt-6 space-x-2">
+              <h2 class="text-sm media420:text-lg font-bold flex-1">Max Transmission Distance</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">FCC: 4.3 mi</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex items-center pt-6 space-x-2">
+              <h2 class="text-sm media420:text-lg font-bold flex-1">Video Transmission System</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">Lightbridge</p>
+          </div>
+          <div class="border-b pt-6"></div>
+          <div class="flex items-center pt-6">
+              <h2 class="text-sm media420:text-lg font-bold flex-1">Operating Frequency</h2>
+              <p class="flex-1 text-sm media420:text-base text-gray-600">2.4 GHz/5.8 GHz</p>
+          </div>
+          <div class="border-b pt-6"></div>
+        </div>
+        <div class="drones-img flex justify-center flex-wrap pt-4 md:pt-0 md:flex-col ">
+          <img class="w-32 sm:w-48" src="/assests/d1.png" alt="">
+          <img class="w-32 sm:w-48" src="/assests/d2.png" alt="">
+          <img class="w-32 sm:w-48" src="/assests/d3.png" alt="">
+          <img class="w-32 sm:w-48" src="/assests/d4.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="drone-model" class="max-w-7xl mx-auto px-4 media420:px-12 py-20 bg-[#f3f6ff] open:bg-[rgb(21,24,34)]">
+    <div class="main flex flex-col items-center justify-center gap-y-8 media920:flex-row">
+      <div class="flex-1 text-center media920:text-start">
+        <h2 class="text-2xl media420:text-4xl font-bold">Two color.</h2>
+        <h2 class="text-2xl media420:text-4xl font-bold">Choose your best.</h2>
+        <p class="my-8 font-light text-slate-500 w-full media920:w-9/12 text-sm">“ProDrone 2.0 changes the rules of the game in aerial photography. Now you can capture more details from a safe distance, as well as implement different visual effects with different focal lengths.”</p>
+        <p class="font-bold">Wade Warren</p>
+        <p class="font-light text-slate-500">ProDrone Inc. Co-Owner</p>
+      </div>
+      <div class="flex-1 flex justify-center gap-y-8 flex-wrap media920:flex-nowrap gap-x-6 z-30">
+        <div class=" bg-white rounded-md p-4 flex flex-col items-center shadow-md cursor-pointer
+        transition ease-in-out hover:-translate-y-2 hover:shadow-lg duration-300 open:bg-[rgb(30,33,43)]">
+          <img class="w-64" src="/assests/smalldroneimage.png" alt="white-drone">
+          <p class="font-light">White ProDrone 2.0</p>
+          <p class="font-bold mt-3 mb-4">$1200</p>
+          <button class="py-2 px-5 text-sm rounded-md bg-[#6366f1] transition ease-in-out duration-300 hover:bg-blue-700 text-white after:absolute after:inset-0">Buy Now</button>
+        </div>
+        <div class=" bg-white rounded-md p-4 flex flex-col items-center shadow-md cursor-pointer
+        transition ease-in-out hover:-translate-y-2 hover:shadow-lg duration-300 open:bg-[rgb(30,33,43)]">
+          <img class="w-64" src="/assests/blackdrone.png" alt="white-drone">
+          <div class="-mt-8 text-center">
+            <p class="font-light">Black ProDrone 2.0</p>
+            <p class="font-bold mt-3 mb-4">$1300</p>
+            <button class="py-2 px-5 text-sm rounded-md bg-[#6366f1] transition ease-in-out duration-300 hover:bg-blue-700 text-white after:absolute after:inset-0">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="buynow" class="max-w-7xl mx-auto px-4 media420:px-12 pt-16 relative">
+      <div class="absolute -top-8 media420:-top-20 media920:-top-40 -left-2 media420:-left-4 h-full w-full flex flex-col items-center justify-center z-20 text-center">
+        <h2 class="text-xl sm:text-4xl font-extrabold mb-1 media420:mb-6">Don't miss anything with <br><span class="text-[#6366f1]">ProDrone 2.0</span></h2>
+        <button class="py-1 media420:py-2 px-4 media420:px-5 text-sm rounded-md bg-[#6366f1] transition ease-in-out duration-300 hover:bg-blue-700 text-white z-10">Buy Now</button>
+      </div>
+      <img src="/assests/cameradrone.png" alt="camera-drone">
+    </section>
+   </main>
+
+   <footer class="bg-[rgb(11,15,25)] max-w-7xl mx-auto px-4 media420:px-12 pt-16 pb-8 text-white">
+      <div id="footer-top" class="flex flex-wrap pb-16 space-y-6">
+        <div class="sm:w-2/4 media920:w-1/3">
+          <h3 class="font-bold text-lg media420:text-2xl mb-4">Newsletter</h3>
+          <p class="font-light text-sm mb-4">Please, subscribe to our newsletter to keep updated about our news and offers.</p>
+          <form class="border border-gray-300 rounded-md overflow-hidden relative">
+            <img class="w-3 absolute left-2 top-[50%] -translate-y-[50%]" src="/assests/envelope-regular.svg" alt="envelope">
+            <input class="w-full py-1 px-8 bg-transparent placeholder:text-sm" id="email-address" name="email-address" type="email" required="" placeholder="Enter your email">
+            <button class="absolute right-0 top-0 py-1 px-2 bg-blue-700 hover:bg-[#6366f1] transition duration-200 rounded-e-md" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="sm:w-2/4 media920:w-1/3 flex flex-col items-center me-12 sm:me-0 ">
+         <div>
+          <h3 class="font-bold text-lg media420:text-2xl mb-4">Our office</h3>
+          <a href="#"><li class="flex items-center text-sm mb-3 hover:text-[#6366f1] transition duration-200"><img class="w-3 me-3" src="/assests/location-dot-solid.svg" alt="location"> 3517 W. Gray St. Utica,<br>Pennsylvania 57867</li></a>
+          <a href="#"><li class="flex items-center text-sm mb-3 hover:text-[#6366f1] transition duration-200"><img class="w-3 me-3" src="/assests/phone-volume-solid.svg" alt="phone">(406) 555‑0120</li></a>
+          <a href="#"><li class="flex items-center text-sm hover:text-[#6366f1] transition duration-200"><img class="w-3 me-3" src="/assests/envelope-solid.svg" alt="envelope">email@example.com</li></a>
+         </div>
+        </div>
+        <div class="media920:w-1/3">
+          <h3 class="font-bold text-lg media420:text-2xl mb-4">Payments accepted</h3>
+          <ul class="flex space-x-4">
+            <a href="#"><img class="w-20" src="/assests/visa.png" alt=""></a>
+            <a href="#"><img class="w-20" src="/assests/mastercard.png" alt=""></a>
+            <a href="#"><img class="w-20" src="/assests/paypal.png" alt=""></a>
+          </ul>
+        </div>
+      </div>
+      <div class="border-b"></div>
+      <div class="footer-bottom pt-6 flex items-center justify-between">
+        <p class="text-xs sm:text-sm font-light text-gray-400">© All rights reserved. Made by <span class="text-white">Shadab Khan</span></p>
+        <div class="icons flex space-x-2">
+          <a href="#" class="h-8 w-8 rounded-full flex items-center justify-center bg-[#191d27]"><img class="w-3" src="/assests/vec1.png" alt="fb"></a>
+          <a href="#" class="h-8 w-8 rounded-full flex items-center justify-center bg-[#191d27]"><img class="w-3" src="/assests/Vec2.png" alt="discord"></a>
+          <a href="#" class="h-8 w-8 rounded-full flex items-center justify-center bg-[#191d27]"><img class="w-3" src="/assests/instagram-brands-solid.svg" alt="instagram"></a>
+        </div>
+      </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="output.js"></script>
+</body>
+</html>
